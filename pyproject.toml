@@ -1,0 +1,21 @@
+[project]
+name = "ai-image-classifier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "arshad-syed245", email = "hamimarshad26@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "opencv-python>=5.0.0.93",
+    "streamlit>=1.64.0",
+    "tensorflow>=2.21.0",
+]
+
+[project.scripts]
+ai-image-classifier = "ai_image_classifier:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
